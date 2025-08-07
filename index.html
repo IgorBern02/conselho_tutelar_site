@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conselho Tutelar de Praia Grande</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/atendimento/style.css
+    "
+    />
   </head>
   <body>
     <header>
-      <img src="./assets/img/logo.png" alt="Logo Conselho Tutelar" class="logo" />
+      <img
+        src="./assets/img/logo.png"
+        alt="Logo Conselho Tutelar"
+        class="logo"
+      />
       <nav>
         <ul>
           <li><a href="#sobre">Quem Somos</a></li>
@@ -17,68 +26,115 @@
           <li><a href="#direitos">Direitos</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="./pages/equipe.html">Equipe</a></li>
-          <li><a href="./pages/formulario.html">Denúncia</a></li>
+          <li><a href="./pages/denuncia.html">Denúncia</a></li>
           <li><a href="./pages/noticias.html">Notícias</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="banner">
-      <img src="./assets/img/banner.jpg" alt="Banner" />
-      <div class="banner-text">
-        <h1>Protegendo Crianças e Adolescentes</h1>
-        <p>Conselho Tutelar de Praia Grande</p>
-      </div>
-    </section>
+    <main>
+      <section class="banner">
+        <img src="./assets/img/banner.jpg" alt="Banner" />
+        <div class="banner-text">
+          <h1>Protegendo Crianças e Adolescentes</h1>
+          <p>Conselho Tutelar de Praia Grande</p>
+        </div>
+      </section>
 
-    <section id="sobre">
-      <h2>Quem Somos</h2>
-      <p>
-        O Conselho Tutelar é um órgão autônomo que atua na defesa dos direitos
-        das crianças e adolescentes...
-      </p>
-    </section>
-
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>📍 Endereço: Rua Exemplo, 123 - Praia Grande - SP</p>
-      <p>📞 Telefone: (13) 1234-5678</p>
-      <p>📱 Plantão: (13) 91234-5678</p>
-      <p>📧 Email: conselho@praia.sp.gov.br</p>
-    </section>
-
-    <section id="atendimento">
-      <h2>Como Funciona o Atendimento</h2>
-      <ul>
-        <li>Recebimento de denúncias</li>
-        <li>Acompanhamento de casos</li>
-        <li>Encaminhamentos para outros órgãos</li>
-      </ul>
-    </section>
-
-    <section id="direitos">
-      <h2>Direitos das Crianças e Adolescentes</h2>
-      <p>
-        Com base no ECA (Estatuto da Criança e do Adolescente), todos têm
-        direito à educação, saúde, alimentação, lazer...
-      </p>
-    </section>
-
-    <section id="faq">
-      <h2>Perguntas Frequentes</h2>
-      <details>
-        <summary>O que faz o Conselho Tutelar?</summary>
+      <section id="sobre">
+        <h2>Quem Somos</h2>
         <p>
-          O Conselho atua protegendo os direitos das crianças e adolescentes
-          quando esses são violados.
+          O Conselho Tutelar é um órgão autônomo que atua na defesa dos direitos
+          das crianças e adolescentes...
         </p>
-      </details>
-      <details>
-        <summary>Posso fazer uma denúncia anônima?</summary>
-        <p>Sim, denúncias anônimas são aceitas e tratadas com sigilo.</p>
-      </details>
-    </section>
+      </section>
 
+      <section id="contato">
+        <h2>Contato</h2>
+
+        <section class="card-grid">
+          <div class="card">
+            <h3>📍Endereço</h3>
+            <p>Rua Exemplo, 123 - Praia Grande - SP</p>
+          </div>
+          <div class="card">
+            <h3>📞 Telefone</h3>
+            <p>(13) 1234-5678</p>
+          </div>
+          <div class="card">
+            <h3>📱 Plantão</h3>
+            <p>(13) 91234-5678</p>
+          </div>
+          <div class="card">
+            <h3>📧 Email</h3>
+            <p>conselho@praia.sp.gov.br</p>
+          </div>
+        </section>
+      </section>
+
+      <section id="atendimento">
+        <h2>Atendimento</h2>
+        <p>
+          O Conselho Tutelar atende de segunda a sexta-feira, das 8h às 17h.
+          Emergências podem ser reportadas pelo telefone de plantão.
+        </p>
+        <section class="card-grid">
+          <div class="card">
+            <p>Recebimento de denúncias</p>
+          </div>
+          <div class="card">
+            <p>Acompanhamento de casos</p>
+          </div>
+          <div class="card">
+            <p>Encaminhamentos para outros órgãos</p>
+          </div>
+          <div class="card">
+            <p>Orientação a pais e responsáveis</p>
+          </div>
+          <div class="card">
+            <p>Atendimento psicológico</p>
+          </div>
+          <div class="card">
+            <p>Atendimento jurídico</p>
+          </div>
+          <div class="card">
+            <p>Visitas domiciliares</p>
+          </div>
+          <div class="card">
+            <p>Participação em reuniões comunitárias</p>
+          </div>
+          <div class="card">
+            <p>Promoção de campanhas educativas</p>
+          </div>
+          <div class="card">
+            <p>Outros</p>
+          </div>
+        </section>
+      </section>
+
+      <section id="direitos">
+        <h2>Direitos das Crianças e Adolescentes</h2>
+        <p>
+          Com base no ECA (Estatuto da Criança e do Adolescente), todos têm
+          direito à educação, saúde, alimentação, lazer...
+        </p>
+      </section>
+
+      <section id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>O que faz o Conselho Tutelar?</summary>
+          <p>
+            O Conselho atua protegendo os direitos das crianças e adolescentes
+            quando esses são violados.
+          </p>
+        </details>
+        <details>
+          <summary>Posso fazer uma denúncia anônima?</summary>
+          <p>Sim, denúncias anônimas são aceitas e tratadas com sigilo.</p>
+        </details>
+      </section>
+    </main>
     <footer>
       <p>
         &copy; 2025 Conselho Tutelar de Praia Grande. Todos os direitos

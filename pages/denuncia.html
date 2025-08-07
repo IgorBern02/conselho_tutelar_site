@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Denúncia</title>
+    <link rel="stylesheet" href=".././styles/global.css" />
+    <link rel="stylesheet" href=".././styles/denuncia/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../assets/img/logo.png"
+        alt="Logo Conselho Tutelar"
+        class="logo"
+      />
+      <button class="back-button">
+        <a href="../index.html">Voltar</a>
+      </button>
+    </header>
+    <section class="info">
+      <h2>Informações Importantes</h2>
+
+      <section class="info-content">
+        <div>
+          <p>
+            Este formulário é destinado a denúncias relacionadas a crianças e
+            adolescentes. Por favor, preencha os campos abaixo com as
+            informações necessárias.
+          </p>
+          <p>
+            Lembre-se: sua denúncia é anônima e será tratada com total sigilo.
+          </p>
+        </div>
+        <div>
+          <p>
+            Se você está enfrentando uma situação de emergência, entre em
+            contato imediatamente com o Conselho Tutelar ou a polícia local.
+          </p>
+          <p>
+            Para denúncias não urgentes, preencha o formulário abaixo. Nossa
+            equipe analisará sua denúncia e tomará as medidas necessárias.
+          </p>
+        </div>
+        <div>
+          <p>
+            Ao enviar este formulário, você concorda que as informações
+            fornecidas serão usadas para investigar a denúncia e tomar as
+            medidas adequadas.
+          </p>
+          <p>
+            Se preferir, você pode entrar em contato diretamente pelo telefone
+            ou e-mail disponíveis na página de contato.
+          </p>
+        </div>
+        <div>
+          <p>
+            Agradecemos por sua colaboração na proteção dos direitos das
+            crianças e adolescentes.
+          </p>
+          <p>
+            Se você tiver alguma dúvida sobre o processo de denúncia, consulte a
+            seção de perguntas frequentes (FAQ) ou entre em contato conosco.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <div class="form-container">
+      <section>
+        <form onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="Seu nome (opcional)" />
+          <input type="text" placeholder="Contato (opcional)" />
+          <textarea required placeholder="Descrição da denúncia"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>
+        &copy; 2023 Conselho Tutelar de Praia Grande. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
