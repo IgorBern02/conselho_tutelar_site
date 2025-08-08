@@ -10,6 +10,11 @@
       href="./styles/atendimento/style.css
     "
     />
+    <link rel="stylesheet" href="./styles/perguntas/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward"
+    />
   </head>
   <body>
     <header>
@@ -120,19 +125,48 @@
         </p>
       </section>
 
-      <section id="faq">
+      <section id="faq" class="faq-section">
         <h2>Perguntas Frequentes</h2>
-        <details>
-          <summary>O que faz o Conselho Tutelar?</summary>
-          <p>
-            O Conselho atua protegendo os direitos das crianças e adolescentes
-            quando esses são violados.
-          </p>
-        </details>
-        <details>
-          <summary>Posso fazer uma denúncia anônima?</summary>
-          <p>Sim, denúncias anônimas são aceitas e tratadas com sigilo.</p>
-        </details>
+
+        <section class="faq-list">
+          <div class="faq-item" onclick="this.classList.toggle('active')">
+            <div class="faq-header">
+              <span class="material-symbols-outlined"> arrow_downward </span>
+              <p>O que é o Conselho Tutelar?</p>
+            </div>
+            <div class="faq-content">
+              <p>
+                O Conselho Tutelar é um órgão autônomo e permanente, criado para
+                zelar pelo cumprimento dos direitos da criança e do adolescente.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item" onclick="this.classList.toggle('active')">
+            <div class="faq-header">
+              <span class="material-symbols-outlined"> arrow_downward </span>
+              <p>Como posso fazer uma denúncia?</p>
+            </div>
+            <div class="faq-content">
+              <p>
+                As denúncias podem ser feitas pessoalmente no Conselho Tutelar,
+                por telefone ou através do nosso site.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item" onclick="this.classList.toggle('active')">
+            <div class="faq-header">
+              <span class="material-symbols-outlined"> arrow_downward </span>
+              <p>Quais são os direitos das crianças e adolescentes?</p>
+            </div>
+            <div class="faq-content">
+              <p>
+                Os direitos incluem educação, saúde, alimentação, lazer,
+                convivência familiar e comunitária, entre outros garantidos pelo
+                ECA.
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer>
