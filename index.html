@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward"
     />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -46,42 +50,77 @@
         </div>
       </section>
 
-      <section id="sobre">
+      <!-- <section id="sobre">
         <h2>Quem Somos</h2>
         <p>
           O Conselho Tutelar é um órgão autônomo que atua na defesa dos direitos
           das crianças e adolescentes...
         </p>
-      </section>
+      </section> -->
 
-      <section id="contato">
+      <section class="quem-somos" aria-label="Quem Somos">
+  <div class="qs-wrap">
+    <span class="qs-badge">Conselho Tutelar de Praia Grande</span>
+    <h2>Protegendo Infâncias, fortalecendo famílias</h2>
+    <p>
+      Somos um órgão autônomo que acolhe, orienta e garante os direitos de
+      crianças e adolescentes. Atuamos ao seu lado, com respeito, sigilo e
+      compromisso com o ECA.
+    </p>
+
+    <ul class="qs-pontos" aria-label="Como atuamos">
+      <li>Atendimento humanizado e sigiloso</li>
+      <li>Articulação com escolas, saúde e rede de proteção</li>
+      <li>Orientação às famílias e encaminhamentos</li>
+    </ul>
+  </div>
+  <div class="qs-glow" aria-hidden="true"></div>
+</section>
+
+
+      <!-- <section id="contato">
         <h2>Contato</h2>
 
         <section class="card-grid">
           <div class="card">
             <h3>📍Endereço</h3>
-            <p>Rua Exemplo, 123 - Praia Grande - SP</p>
+            <p>Av. Profa. Heleny Rosa, 114 - Jardim Melvi, Praia Grande - SP<br>CEP: 11712-150</p>
           </div>
           <div class="card">
             <h3>📞 Telefone</h3>
-            <p>(13) 1234-5678</p>
-          </div>
-          <div class="card">
-            <h3>📱 Plantão</h3>
-            <p>(13) 91234-5678</p>
+            <p>(13) 3496-5069</p>
           </div>
           <div class="card">
             <h3>📧 Email</h3>
-            <p>conselho@praia.sp.gov.br</p>
+            <p>cmdca@praiagrande.sp.gov.br</p>
           </div>
         </section>
-      </section>
+      </section> -->
+      <div class="section-box">
+  <h2>Contato</h2>
+  <div class="contact-info">
+    <div class="contact-item">
+      <strong>📍 Endereço</strong><br>
+      Av. Profa. Heleny Rosa, 114 - Jardim Melvi, Praia Grande - SP<br>
+      CEP: 11712-150
+    </div>
+    <div class="contact-item">
+      <strong>📞 Telefone</strong><br>
+      (13) 3496-5069
+    </div>
+    <div class="contact-item">
+      <strong>📧 Email</strong><br>
+      cmdca@praiagrande.sp.gov.br
+    </div>
+  </div>
+</div>
 
-      <section id="atendimento">
+
+      <!-- <section id="atendimento">
         <h2>Atendimento</h2>
         <p>
           O Conselho Tutelar atende de segunda a sexta-feira, das 8h às 17h.
-          Emergências podem ser reportadas pelo telefone de plantão.
+          Emergências podem ser reportadas pelo telefone.
         </p>
         <section class="card-grid">
           <div class="card">
@@ -115,7 +154,25 @@
             <p>Outros</p>
           </div>
         </section>
-      </section>
+      </section> -->
+    <div class="section-box">
+  <h2>Atendimento</h2>
+  <p>O Conselho Tutelar atende de segunda a sexta-feira, das 8h às 17h. Emergências podem ser reportadas pelo telefone.</p>
+
+  <div class="service-cards">
+    <div class="service-card">Recebimento de denúncias</div>
+    <div class="service-card">Acompanhamento de casos</div>
+    <div class="service-card">Encaminhamentos para outros órgãos</div>
+    <div class="service-card">Orientação a pais e responsáveis</div>
+    <div class="service-card">Atendimento psicológico</div>
+    <div class="service-card">Atendimento jurídico</div>
+    <div class="service-card">Visitas domiciliares</div>
+    <div class="service-card">Participação em reuniões comunitárias</div>
+    <div class="service-card">Promoção de campanhas educativas</div>
+    <div class="service-card">Outros</div>
+  </div>
+</div>
+  
 
       <section id="direitos">
         <h2>Direitos das Crianças e Adolescentes</h2>
@@ -132,7 +189,7 @@
           <div class="faq-item" onclick="this.classList.toggle('active')">
             <div class="faq-header">
               <span class="material-symbols-outlined"> arrow_downward </span>
-              <p>O que é o Conselho Tutelar?</p>
+              <p><strong>O que é o Conselho Tutelar?</strong></p>
             </div>
             <div class="faq-content">
               <p>
@@ -144,7 +201,7 @@
           <div class="faq-item" onclick="this.classList.toggle('active')">
             <div class="faq-header">
               <span class="material-symbols-outlined"> arrow_downward </span>
-              <p>Como posso fazer uma denúncia?</p>
+              <p><strong>Como posso fazer uma denúncia?</strong></p>
             </div>
             <div class="faq-content">
               <p>
@@ -156,7 +213,7 @@
           <div class="faq-item" onclick="this.classList.toggle('active')">
             <div class="faq-header">
               <span class="material-symbols-outlined"> arrow_downward </span>
-              <p>Quais são os direitos das crianças e adolescentes?</p>
+              <p><strong>Quais são os direitos das crianças e adolescentes?</strong></p>
             </div>
             <div class="faq-content">
               <p>
