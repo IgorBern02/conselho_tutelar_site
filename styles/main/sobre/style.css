@@ -1,0 +1,90 @@
+.quem-somos {
+  position: relative;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+.qs-wrap {
+  position: relative;
+  isolation: isolate;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 28px;
+  border-radius: var(--qs-radius);
+  background: #005ca5;
+  color: var(--qs-white);
+  box-shadow: var(--qs-shadow);
+  overflow: hidden;
+}
+.qs-wrap h2 {
+  color: #ffffff;
+}
+
+/* brilho suave ao fundo */
+.qs-glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(
+      600px 280px at 20% 20%,
+      rgba(255, 255, 255, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      500px 240px at 90% 60%,
+      rgba(255, 255, 255, 0.12),
+      transparent 60%
+    );
+  filter: blur(2px);
+  border-radius: var(--qs-radius);
+  z-index: -1;
+}
+
+/* badge */
+.qs-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--qs-white);
+  padding: 8px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+/* título e texto */
+.quem-somos h2 {
+  margin: 12px 0 6px;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+.quem-somos p {
+  max-width: 70ch;
+  margin: 8px 0 16px;
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  opacity: 0.95;
+}
+
+/* lista de pontos */
+.qs-pontos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px 18px;
+  margin: 10px 0 18px;
+  padding: 0;
+  list-style: none;
+}
+.qs-pontos li {
+  position: relative;
+  padding-left: 28px;
+}
+.qs-pontos li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  /* box-shadow: 0 0 0 6px rgba(255,255,255,.18); */
+}

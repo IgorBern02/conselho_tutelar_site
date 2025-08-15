@@ -5,35 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conselho Tutelar de Praia Grande</title>
     <link rel="stylesheet" href="./styles/global.css" />
-    <link
-      rel="stylesheet"
-      href="./styles/atendimento/style.css
-    "
-    />
-    <link rel="stylesheet" href="./styles/perguntas/style.css" />
+    <link rel="stylesheet" href="./styles/header/style.css" />
+    <link rel="stylesheet" href="./styles/main/banner/style.css" />
+    <link rel="stylesheet" href="./styles/main/sobre/style.css" />
+    <link rel="stylesheet" href="./styles/main/contato/style.css" />
+    <link rel="stylesheet" href="./styles/main/atendimento/style.css" />
+    <link rel="stylesheet" href="./styles/main/direitos/style.css" />
+    <link rel="stylesheet" href="./styles/main/faq/style.css" />
+    <link rel="stylesheet" href="./styles/nav/denuncia/style.css" />
+    <link rel="stylesheet" href="./styles/nav/equipe/style.css" />
+    <link rel="stylesheet" href="./styles/nav/noticias/style.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward"
     />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <img
         src="./assets/img/logo.png"
         alt="Logo Conselho Tutelar"
         class="logo"
       />
-      <nav>
+
+   <!-- Botão hambúrguer -->
+  <button class="menu-toggle" aria-label="Abrir menu">
+   <i class="fas fa-bars"></i> 
+  </button>
+ 
+    <!-- Menu Desktop -->
+      <nav class="nav-menu">
         <ul>
-          <li><a href="#sobre">Quem Somos</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#atendimento">Atendimento</a></li>
-          <li><a href="#direitos">Direitos</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sobre" id="quemsomos">Quem Somos</a></li>
+          <li><a href="#contato" id="contato">Contato</a></li>
+          <li><a href="#atendimento" id="atendimento"">Atendimento</a></li>
+          <li><a href="#direitos" id="direitos">Direitos</a></li>
+          <li><a href="#faq" id="faq">FAQ</a></li>
           <li><a href="./pages/equipe.html">Equipe</a></li>
           <li><a href="./pages/denuncia.html">Denúncia</a></li>
           <li><a href="./pages/noticias.html">Notícias</a></li>
@@ -42,6 +56,7 @@
     </header>
 
     <main>
+      <!-- Banner -->
       <section class="banner">
         <img src="./assets/img/banner.jpg" alt="Banner" />
         <div class="banner-text">
@@ -50,138 +65,80 @@
         </div>
       </section>
 
-      <!-- <section id="sobre">
-        <h2>Quem Somos</h2>
-        <p>
-          O Conselho Tutelar é um órgão autônomo que atua na defesa dos direitos
-          das crianças e adolescentes...
-        </p>
-      </section> -->
-
+     <!-- Sobre -->
       <section class="quem-somos" aria-label="Quem Somos">
-  <div class="qs-wrap">
-    <span class="qs-badge">Conselho Tutelar de Praia Grande</span>
-    <h2>Protegendo Infâncias, fortalecendo famílias</h2>
-    <p>
-      Somos um órgão autônomo que acolhe, orienta e garante os direitos de
-      crianças e adolescentes. Atuamos ao seu lado, com respeito, sigilo e
-      compromisso com o ECA.
-    </p>
+        <div class="qs-wrap">
+          <span class="qs-badge">Conselho Tutelar de Praia Grande</span>
+          <h2>Protegendo Infâncias, fortalecendo famílias</h2>
+          <p>
+            Somos um órgão autônomo que acolhe, orienta e garante os direitos de
+            crianças e adolescentes. Atuamos ao seu lado, com respeito, sigilo e
+            compromisso com o ECA.
+          </p>
 
-    <ul class="qs-pontos" aria-label="Como atuamos">
-      <li>Atendimento humanizado e sigiloso</li>
-      <li>Articulação com escolas, saúde e rede de proteção</li>
-      <li>Orientação às famílias e encaminhamentos</li>
-    </ul>
-  </div>
-  <div class="qs-glow" aria-hidden="true"></div>
-</section>
-
-
-      <!-- <section id="contato">
-        <h2>Contato</h2>
-
-        <section class="card-grid">
-          <div class="card">
-            <h3>📍Endereço</h3>
-            <p>Av. Profa. Heleny Rosa, 114 - Jardim Melvi, Praia Grande - SP<br>CEP: 11712-150</p>
-          </div>
-          <div class="card">
-            <h3>📞 Telefone</h3>
-            <p>(13) 3496-5069</p>
-          </div>
-          <div class="card">
-            <h3>📧 Email</h3>
-            <p>cmdca@praiagrande.sp.gov.br</p>
-          </div>
-        </section>
-      </section> -->
+          <ul class="qs-pontos" aria-label="Como atuamos">
+            <li>Atendimento humanizado e sigiloso</li> 
+            <li>Articulação com escolas, saúde e rede de proteção</li>
+            <li>Orientação às famílias e encaminhamentos</li>
+          </ul>
+        </div>
+        <div class="qs-glow" aria-hidden="true"></div>
+      </section>
+     
+      <!-- Contato -->
       <div class="section-box">
-  <h2>Contato</h2>
-  <div class="contact-info">
-    <div class="contact-item">
-      <strong>📍 Endereço</strong><br>
-      Av. Profa. Heleny Rosa, 114 - Jardim Melvi, Praia Grande - SP<br>
-      CEP: 11712-150
-    </div>
-    <div class="contact-item">
-      <strong>📞 Telefone</strong><br>
-      (13) 3496-5069
-    </div>
-    <div class="contact-item">
-      <strong>📧 Email</strong><br>
-      cmdca@praiagrande.sp.gov.br
-    </div>
-  </div>
-</div>
+        <h2>Contato</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>📍 Endereço</strong><br />
+            Av. Profa. Heleny Rosa, 114 - Jardim Melvi, Praia Grande - SP<br />
+            CEP: 11712-150
+          </div>
+          <div class="contact-item">
+            <strong>📞 Telefone</strong><br />
+            (13) 3496-5069
+          </div>
+          <div class="contact-item">
+            <strong>📧 Email</strong><br />
+            cmdca@praiagrande.sp.gov.br
+          </div>
+        </div>
+      </div>
 
-
-      <!-- <section id="atendimento">
+      <!-- Atendimento -->
+      <div class="section-box">
         <h2>Atendimento</h2>
         <p>
           O Conselho Tutelar atende de segunda a sexta-feira, das 8h às 17h.
           Emergências podem ser reportadas pelo telefone.
         </p>
-        <section class="card-grid">
-          <div class="card">
-            <p>Recebimento de denúncias</p>
-          </div>
-          <div class="card">
-            <p>Acompanhamento de casos</p>
-          </div>
-          <div class="card">
-            <p>Encaminhamentos para outros órgãos</p>
-          </div>
-          <div class="card">
-            <p>Orientação a pais e responsáveis</p>
-          </div>
-          <div class="card">
-            <p>Atendimento psicológico</p>
-          </div>
-          <div class="card">
-            <p>Atendimento jurídico</p>
-          </div>
-          <div class="card">
-            <p>Visitas domiciliares</p>
-          </div>
-          <div class="card">
-            <p>Participação em reuniões comunitárias</p>
-          </div>
-          <div class="card">
-            <p>Promoção de campanhas educativas</p>
-          </div>
-          <div class="card">
-            <p>Outros</p>
-          </div>
+
+        <div class="service-cards">
+          <div class="service-card">Recebimento de denúncias</div>
+          <div class="service-card">Acompanhamento de casos</div>
+          <div class="service-card">Encaminhamentos para outros órgãos</div>
+          <div class="service-card">Orientação a pais e responsáveis</div>
+          <div class="service-card">Atendimento psicológico</div>
+          <div class="service-card">Atendimento jurídico</div>
+          <div class="service-card">Visitas domiciliares</div>
+          <div class="service-card">Participação em reuniões comunitárias</div>
+          <div class="service-card">Promoção de campanhas educativas</div>
+          <div class="service-card">Outros</div>
+        </div>
+      </div>
+
+      <!-- Direitos -->
+      <div class="section-box">
+        <section id="direitos">
+          <h2>Direitos das Crianças e Adolescentes</h2>
+          <p>
+            Com base no ECA (Estatuto da Criança e do Adolescente), todos têm
+            direito à educação, saúde, alimentação, lazer...
+          </p>
         </section>
-      </section> -->
-    <div class="section-box">
-  <h2>Atendimento</h2>
-  <p>O Conselho Tutelar atende de segunda a sexta-feira, das 8h às 17h. Emergências podem ser reportadas pelo telefone.</p>
+      </div>
 
-  <div class="service-cards">
-    <div class="service-card">Recebimento de denúncias</div>
-    <div class="service-card">Acompanhamento de casos</div>
-    <div class="service-card">Encaminhamentos para outros órgãos</div>
-    <div class="service-card">Orientação a pais e responsáveis</div>
-    <div class="service-card">Atendimento psicológico</div>
-    <div class="service-card">Atendimento jurídico</div>
-    <div class="service-card">Visitas domiciliares</div>
-    <div class="service-card">Participação em reuniões comunitárias</div>
-    <div class="service-card">Promoção de campanhas educativas</div>
-    <div class="service-card">Outros</div>
-  </div>
-</div>
-  
-
-      <section id="direitos">
-        <h2>Direitos das Crianças e Adolescentes</h2>
-        <p>
-          Com base no ECA (Estatuto da Criança e do Adolescente), todos têm
-          direito à educação, saúde, alimentação, lazer...
-        </p>
-      </section>
-
+      <!-- Perguntas -->
       <section id="faq" class="faq-section">
         <h2>Perguntas Frequentes</h2>
 
@@ -213,7 +170,11 @@
           <div class="faq-item" onclick="this.classList.toggle('active')">
             <div class="faq-header">
               <span class="material-symbols-outlined"> arrow_downward </span>
-              <p><strong>Quais são os direitos das crianças e adolescentes?</strong></p>
+              <p>
+                <strong
+                  >Quais são os direitos das crianças e adolescentes?</strong
+                >
+              </p>
             </div>
             <div class="faq-content">
               <p>
@@ -226,6 +187,8 @@
         </section>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer>
       <p>
         &copy; 2025 Conselho Tutelar de Praia Grande. Todos os direitos
@@ -233,6 +196,7 @@
       </p>
     </footer>
 
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="script.js"></script>
   </body>
 </html>

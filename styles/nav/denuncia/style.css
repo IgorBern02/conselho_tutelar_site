@@ -8,7 +8,7 @@ form {
 
 input,
 textarea,
-button {
+.buttonForm {
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -34,7 +34,6 @@ button {
 button:hover {
   background-color: #004080;
 }
-
 .info-content {
   display: flex;
   flex-direction: column;

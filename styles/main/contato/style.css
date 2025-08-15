@@ -1,0 +1,44 @@
+.section-box h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Texto padrão */
+.section-box p,
+.section-box span {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Informações de contato (endereços, telefone, email) */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.contact-item {
+  flex: 1 1 30px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+/* Ícones (caso você utilize FontAwesome ou SVGs) */
+.contact-item i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}

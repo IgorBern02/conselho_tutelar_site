@@ -1,0 +1,60 @@
+/* Logo */
+.logo {
+  height: 50px;
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* aparece só no mobile */
+}
+
+/* Menu padrão */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Estilo Mobile ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* aparece no mobile */
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #005baa;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    transform: translateX(0);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 35px;
+  }
+
+  .nav-menu > ul:nth-child(1) {
+    margin-top: 40px;
+  }
+}

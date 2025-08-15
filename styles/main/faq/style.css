@@ -1,8 +1,14 @@
+.faq-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .faq-list {
   display: flex;
   flex-direction: column;
   width: 100%;
-
+  max-width: 100%; /* garante que ocupe tudo */
+  padding: 0 1rem; /* espaço nas laterais */
   gap: 1rem;
 }
 
@@ -28,7 +34,7 @@
   color: #333;
   font-weight: 500;
   gap: 0.5rem;
-  max-width: 800px;
+  max-width: none; /* remove a limitação de 800px */
   margin: 0 auto;
 }
 
@@ -78,4 +84,17 @@
   font-size: 24px;
   color: #333;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .faq-list {
+    padding: 0;
+  }
+
+  .faq-item {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
 }
